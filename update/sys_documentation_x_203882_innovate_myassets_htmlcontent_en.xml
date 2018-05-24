@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="htmlcontent" label="HTMLContent" language="en" table="x_203882_innovate_myassets">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>htmlcontent</element>
+            <help/>
+            <hint/>
+            <label>HTMLContent</label>
+            <language>en</language>
+            <name>x_203882_innovate_myassets</name>
+            <plural>HTMLContents</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-16 04:43:21</sys_created_on>
+            <sys_id>29b858a24f021300e7f701bda310c7f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>HTMLContent</sys_name>
+            <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+            <sys_update_name>sys_documentation_x_203882_innovate_myassets_htmlcontent_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-16 04:43:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Table1" max_length="40" name="x_203882_innovate_table1" type="collection">
+        <element label="AssetName" max_length="32" name="assetname" reference="x_203882_innovate_myassets" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" mandatory="true" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="ChoicePriority" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element label="A" sequence="0" value="a"/>
+                <element label="B" sequence="1" value="b"/>
+                <element label="C" sequence="2" value="c"/>
+            </choice>
+        </element>
+        <element label="New Time" max_length="40" name="u_glide_time_4" type="glide_time"/>
+        <element choice="1" default="ef43c6d40a0a0b5700c77f9bf387afe3" label="ReferenceToIncident" max_length="32" name="u_reference_5" reference="incident" type="reference">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="u_reference_5"/>
+        </index>
+        <index name="index2">
+            <element name="assetname"/>
+        </index>
+    </element>
+</database>

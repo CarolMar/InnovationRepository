@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>standard</category>
+        <client_script><![CDATA[function ($scope, $sce) {
+	var c = this;
+	c.html = $sce.trustAsHtml(c.options.html);
+	$scope.$watch('c.options.html',function(){
+		c.html = $sce.trustAsHtml(c.options.html);
+	});
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>#home_left&#13;
+{&#13;
+  clear: left;&#13;
+float: left;&#13;
+margin-top: -30px;&#13;
+padding: 25px 10px 10px;&#13;
+width: 200px;&#13;
+font-family: Arial;&#13;
+};&#13;
+#sidenav1 ul li ul {&#13;
+	display: none;&#13;
+	border-color: #dadada #dadada #dadada;&#13;
+	border-style: solid;&#13;
+	border-width: 1px 1px 3px;&#13;
+	left: 183px;&#13;
+	margin-top: -45px;&#13;
+}&#13;
+#sidenav1 ul li:hover &gt; ul { display:block; position:absolute; width:183px; }&#13;
+#sidenav1 ul li:hover &gt; ul li{&#13;
+	margin: 0px;&#13;
+	padding: 0px;&#13;
+	list-style: none;&#13;
+	text-align: left;&#13;
+}&#13;
+#sidenav1 ul li:hover &gt; ul li a {&#13;
+	margin: 0;&#13;
+	text-decoration: none;&#13;
+	display: block;&#13;
+}&#13;
+#sidenav1 ul li:hover &gt; ul li a:hover { text-decoration:none;}&#13;
+  &#13;
+  /* 2ND LEVEL DROP-DOWN MENU */&#13;
+  #sidenav1 ul li &gt; ul li ul { display:none; margin-left: 24px; width:183px; }&#13;
+  #sidenav1 ul li &gt; ul li:hover &gt; ul { display:block; position:absolute; left: 183px; margin-top:-42px; }&#13;
+  #sidenav1 ul li &gt; ul li:hover ul li { margin:0px; padding:0px 0px; list-style:none; }&#13;
+  #sidenav1 ul li &gt; ul li:hover ul li a { display:block; }&#13;
+  #sidenav1 ul li &gt; ul li:hover ul li a:hover { }&#13;
+  &#13;
+  /* 3RD LEVEL DROP-DOWN MENU */&#13;
+  #sidenav1 ul li &gt; ul li ul li &gt; ul { display:none; width:183px; }&#13;
+  #sidenav1 ul li &gt; ul li ul li:hover &gt; ul { display:block; position:absolute; left: 179px; margin-top:-42px; }&#13;
+  #sidenav1 ul li &gt; ul li ul li:hover &gt; ul li { list-style:none; float:none; margin-left:1px; padding:0px; }&#13;
+  &#13;
+  /* This sets all hovered lists to red */&#13;
+  #sidenav1 li:hover a, #sidenav1 li.over a, #sidenav1 li:hover li:hover a, #sidenav1 li.over li.over a, #sidenav1 li:hover li:hover li:hover a, #sidenav1 li.over li.over li.over a, #sidenav1 li:hover li a:hover, #sidenav1 li.over li a:hover, #sidenav1 li:hover li:hover li:hover a:hover, #sidenav1 li.over li li a:hover, #sidenav1 li:hover li:hover li:hover li:hover a:hover, #sidenav1 li.over li.over li.over li.over a:hover {&#13;
+	color: #FFFFFF !important;&#13;
+	background: none repeat scroll 0 0 #656565;&#13;
+  }&#13;
+   &#13;
+  /* Set dropdown to default */&#13;
+  #sidenav1 li:hover li a, #sidenav1 li.over li a, #sidenav1 li:hover li:hover li a, #sidenav1 li.over li.over li a, #sidenav1 li:hover li:hover li:hover li a, #sidenav1 li.over li.over li.over li a {&#13;
+     color:#000000 !important;&#13;
+     background-color: #FFFFFF;&#13;
+  }  &#13;
+  &#13;
+/* NAVIGATION :: END */&#13;
+/* end of new left nav drop down css&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title</field_list>
+        <has_preview>true</has_preview>
+        <id>overviewwidget</id>
+        <internal>false</internal>
+        <link/>
+        <name>OverviewWidget</name>
+        <option_schema>[{"name":"html","default_value":" &lt;b&gt;Hello&lt;/b&gt;","section":"Data","label":"HTML","type":"translated_html"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-07 05:47:20</sys_created_on>
+        <sys_id>df019ee34f711300e7f701bda310c735</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>OverviewWidget</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>sp_widget_df019ee34f711300e7f701bda310c735</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-16 07:29:25</sys_updated_on>
+        <template><![CDATA[<div>
+  <div ng-if="!c.options.html" class="panel panel-default">
+    <div class="panel-body">
+      <b>${HTML Widget}</b><br>
+      ${Ctrl + Click > Options to set HTML content}
+    </div>
+  </div>
+  <div ng-if="c.options.html" ng-bind-html="c.html"></div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

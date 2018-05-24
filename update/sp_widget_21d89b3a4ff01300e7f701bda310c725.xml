@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function(){
+	var c=this;
+	c.data.menus=[
+	 {name:'menu1',type:'',url:'http://baidu.com'},
+	  {name:'menu2',type:'',url:'http://baidu.com'},
+	  {name:'menu3',type:'parent',url:'http://baidu.com',
+		 submenus:[{name:'submenu1',type:'',url:'http://baidu.com'}, 
+							 {name:'submenu2',type:'',url:'http://baidu.com'}]}
+		 
+ ];
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance_menu</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>title</field_list>
+        <has_preview>true</has_preview>
+        <id>mytopnavigation</id>
+        <internal>false</internal>
+        <link><![CDATA[function(scope, elem) {
+	$(elem).on('keydown','.header-menu-item',function(e){
+		var target = e.target;
+		if (target.localName == 'a') {
+			if(e.keyCode == 37) {
+				e.preventDefault();
+				$(target).parents('li').removeClass('open');
+				$(target).parents('li').prev('li').find('a').focus();
+			} else if(e.keyCode == 39) {
+				e.preventDefault();
+				$(target).parents('li').removeClass('open');
+				$(target).parents('li').next('li').find('a').focus();
+				
+			}
+			if(e.keyCode == 9) {
+				$(target).parents('li').removeClass('open');
+			}
+		}
+		});
+	}]]></link>
+        <name>MyTopNavigation</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function(){
+	// build menus
+ 
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-16 10:02:45</sys_created_on>
+        <sys_id>21d89b3a4ff01300e7f701bda310c725</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>MyTopNavigation</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>sp_widget_21d89b3a4ff01300e7f701bda310c725</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-21 09:04:55</sys_updated_on>
+        <template><![CDATA[
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Links -->
+  <ul class="navbar-nav" ng-repeat="m in c.data.menus">
+    <li ng-if="m.type!='parent'" class="nav-item">
+      <a class="nav-link" href="{{m.url}}">{{m.name}}</a>
+    </li>
+    <!-- Dropdown -->
+    <li ng-if="m.type=='parent'" class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="{{menu.url}}" id="navbardrop" data-toggle="dropdown">
+        {{m.name}}
+      </a>
+      <div class="dropdown-menu" ng-repeat="sub in m.submenus">
+        <a class="dropdown-item" href="{{sub.url}}">{{sub.name}}</a>
+      </div>
+    </li>
+  </ul>
+</nav>]]></template>
+    </sp_widget>
+</record_update>

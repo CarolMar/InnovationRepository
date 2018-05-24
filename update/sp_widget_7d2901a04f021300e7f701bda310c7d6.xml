@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.icontable{&#13;
+  margin-top:10px;&#13;
+}&#13;
+.icontd{&#13;
+  padding-left:5px;padding-right:5px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>myfooterwidget</id>
+        <internal>false</internal>
+        <link/>
+        <name>MyFooterWidget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	var whatwesellOptions = {glyph:"th-large",link_template:"Top Icon",title: "What we sell"};
+    data.whatwesellWidget = $sp.getWidget("myiconlinkwidget", whatwesellOptions);
+
+ var options = [
+        {glyph:"th-large",link_template:"Top Icon",title: "What we sell"},
+        {glyph:"home",link_template:"Top Icon",type:{url:"https://dxcportal.sharepoint.com/sites/omrep/SitePages/Home.aspx"},title: "Knowledge center"},
+        {glyph:"heart",link_template:"Top Icon",type:{url:"https://my.dxc.com/"}, title: "My DXC"},
+        {glyph:"cogs",link_template:"Top Icon",type:{url:"https://github.dxc.com/pages/Platform-DXC/docs/"}, title: "Platform DXC"},
+	    {glyph:"eye",link_template:"Top Icon",type:{url:"https://my.dxc.com/bionix"}, title: "DXC Bionix"}
+    ];
+
+    data.iconLinks = [];
+    for (var i in options) {
+        data.iconLinks.push($sp.getWidget("myiconlinkwidget", options[i]));
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-10 03:07:08</sys_created_on>
+        <sys_id>7d2901a04f021300e7f701bda310c7d6</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>MyFooterWidget</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>sp_widget_7d2901a04f021300e7f701bda310c7d6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-10 06:55:17</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <table class="icontable" width="100%">
+      <!--<td class="icontd" ng-repeat="iconLink in c.data.iconLinks">
+      <sp-widget widget="iconLink"></sp-widget>-->
+    <td>
+       <sp-widget widget="data.whatwesellWidget"></sp-widget>
+    </td>
+     <td>
+       
+    </td>
+  </table>
+</div>]]></template>
+    </sp_widget>
+</record_update>

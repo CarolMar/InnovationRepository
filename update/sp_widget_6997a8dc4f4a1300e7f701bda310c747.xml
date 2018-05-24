@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>&#13;
+.BasePara {&#13;
+	font-family: Arial;&#13;
+	font-size: 11pt&#13;
+}&#13;
+.BaseLink {&#13;
+	font-family: Arial;&#13;
+	/*text-decoration: none;*/&#13;
+	style="CURSOR: hand;&#13;
+}&#13;
+.BaseLink:link {&#13;
+	/*color: #007DBA;*/&#13;
+	color: #000000;&#13;
+}&#13;
+.BaseLink:visited {&#13;
+	color: #959595;&#13;
+	&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>opsnewswidget</id>
+        <internal>false</internal>
+        <link/>
+        <name>OpsNews</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-09 06:12:26</sys_created_on>
+        <sys_id>6997a8dc4f4a1300e7f701bda310c747</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OpsNews</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>sp_widget_6997a8dc4f4a1300e7f701bda310c747</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-09 06:12:26</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  
+<table width="100%" border="0" cellspacing="5" cellpadding="5">
+  <tr>
+    <td><img src="EDGEConnectFBLogo.gifx" alt="" width="110" height="50" /></td>
+    <td class="BasePara"><strong>EDGE Connect on Workplace!</strong> - Come join us at our new <strong><a href="https://dxc.facebook.com/groups/EDGEConnect/" target="_blank" class="BaseLink">EDGE Connect on Workplace</a></strong> DXC facebook. EDGE Connect hosted by the Global Tooling SMEs, provides a central forum for DXC discussions.</td>
+  </tr>
+  
+  <tr>
+    <td><img src="Project-VisioLogos.gifx" alt="" width="110" height="54" /></td>
+    <td class="BasePara"><strong>Microsoft Project/Visio license holders must provide 'intent to renew' software</strong> - DXC Technology has a new agreement with Microsoft that requires us to provide an 'intent to renew' for users who need to retain their Microsoft Project and Visio software licenses. If you have a business need to retain them, you <strong>must</strong> submit your 'intent to renew' prior to <strong>Jan. 22, 2018</strong>. ...<strong><a href="https://dxc.facebook.com/groups/EDGEConnect/permalink/211036709467202/" target="_blank" class="BaseLink">more information</a></strong>.</td>
+  </tr>
+  
+  <tr>
+    <td><img src="O365SharePointLogo.gifx" alt="" width="108" height="47" /></td>
+    <td class="BasePara"><strong>SharePoint Manual Migrations</strong> - As part of the DXC Technology IT services integration, active ES SharePoint sites must be migrated to the DXC SharePoint environment by Sept 2018. By Feb. 1, 2018, all site owners must complete the Migration Survey on the <strong><a href="https://hpe.sharepoint.com/teams/sitedirectory/SitePages/MySites.aspx" target="_blank" class="BaseLink">SharePoint Dashboard</a></strong>. If not completed, IT will assume sites are no longer needed and they will be marked for deletion. ...<strong><a href="https://dxc.facebook.com/groups/EDGEConnect/permalink/212879619282911/" target="_blank" class="BaseLink">more information</a></strong>.</td>
+  </tr>
+  
+  <tr>
+    <td><img src="AdobeLogo.gifx" alt="" width="106" height="41" /></td>
+    <td class="BasePara"><strong>Adobe software license holders must request and re-download Adobe software</strong> - All legacy Adobe software licenses will be discontinued and removed on or about March 31, 2018.  Users with a business need to retain an Adobe software license must submit a request prior to March 1, 2018. ...<strong><a href="https://dxc.facebook.com/groups/EDGEConnect/permalink/213065405930999/" target="_blank" class="BaseLink">more information</a></strong>.</td>
+  </tr>
+  
+  <tr>
+    <td width="12%"><img src="QandA.gifx" alt="" width="106" height="45" /></td>
+    <td width="88%" class="BasePara">
+      <strong>Come join us!</strong>
+      In the <a href="javascript:void(0)" target="_blank" class="BaseLink"><strong>Global Tooling SME LATAM Q&amp;A</strong></a> you can ask questions in Spanish, Portuguese, Mandarin, Chinese, Hindi, Kannada, Telugu or English and we will reply back in your own native language.
+      <p>Also, you are invited to join our <a href="javascript:void(0)" target="_blank" class="BaseLink"><strong>Weekly QnA Sessions</strong></a>: 
+      <p><strong>- AMER/EMEA and Migrations</strong> for questions in English</p>
+      <p><strong>- Latin America</strong> for questions in Spanish and Portuguese </p>
+  <p><strong>- APAC</strong> for questions in Mandarin, Chinese, Hindi, Kannada, Telugu or English
+    <p> Remember the <strong>EDGE Engineering monthly stakeholders meeting</strong>, where we present any updates we have about the tools we support, the invite is attached <a href="javascript:void(0)" target="_blank" class="BaseLink"><strong>here</strong></a></p>
+      </td>
+  </tr>  
+
+  <tr>
+    <td width="12%"><img src="HP_PPMIcon.gifx" alt="" width="107" height="42" /></td>
+    <td width="88%"  class="BasePara"><strong>PPMC Delivery Community Forum</strong> - A placeholder where users can ask any questions they have related to PPMC. These Sessions are facilitated by PPMC Business SMEs on Second Monday of each month. More information is available <a href="javascript:void(0)" target="_blank" class="BaseLink"><strong>here</strong></a>.</td>
+  </tr> 
+  
+  <tr>
+    <td>&nbsp;</td>
+    <td  class="BasePara">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td  class="BasePara">&nbsp;</td>
+  </tr>
+</table>
+</div>]]></template>
+    </sp_widget>
+</record_update>

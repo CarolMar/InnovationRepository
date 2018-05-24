@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>Service Portal</category>
+        <format>gif</format>
+        <height>45</height>
+        <image/>
+        <name>QandA.gif</name>
+        <size_bytes>1539</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-09 06:19:51</sys_created_on>
+        <sys_id>80abe4944f8a1300e7f701bda310c786</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>QandA.gif</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>db_image_80abe4944f8a1300e7f701bda310c786</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-09 06:19:57</sys_updated_on>
+        <thumbnail/>
+        <width>106</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#ffffff</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/gif</content_type>
+        <file_name>image</file_name>
+        <image_height>45</image_height>
+        <image_width>106</image_width>
+        <size_bytes>1539</size_bytes>
+        <size_compressed>994</size_compressed>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-09 06:19:57</sys_created_on>
+        <sys_id>9cbbe4944f8a1300e7f701bda310c77f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-09 06:19:57</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>80abe4944f8a1300e7f701bda310c786</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="9cbbe4944f8a1300e7f701bda310c77f">9cbbe4944f8a1300e7f701bda310c77f</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-09 06:19:57</sys_created_on>
+        <sys_id>dcbbe4944f8a1300e7f701bda310c77f</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>c/d0s7BMzGLQZfjOAAEWHBwcDAypAgICFkAOg4WEhEQqA4OCgoKGhoaBgQGDxUQLCwsHBwcPD4+JQBWp2wICAiIjIxMTE1NTUzMzMwsLC7elMlRWVtbW1lpMvJU6cWJra2tvb+/UqVNvTbSYO3du6rb/S5cuXbdu3bZt2/bt2zfx1rb/21KPHTs28db/c+fOXbt27f+tiffu3Xv27Nm2///fvXt36/+tW///f/v27f9/oACQ+Z9hFIwCGgAdEAHKCwwc/xnyOWQ8Niw42MwhrBVzYsNC51Z5NYsJDxqPHe6WMM7KObGIsaFfXnTNDY9NS062yjk2hSR8XHJ6upT7ijk/GZednc2tfybEk3H5+flM8m9YXjKsCJwt1Va3p2DLS09hL8YJBV5TVVoX8q/KOiuhfNiHy3Bb194Thw4dEeAJnxGR3XQ0YpWqzJmQhmsJHZzsZVwTBJTeRM8xXKeV+yApoYMl0FHowoVLqhxTpbmuOXwoZOBp7ldOX9JoUdgkrv9EbV7lgiOe0gJlRjMUCzadusoSyNzQe/HQi37uT6umfGhc2ykownHmS4IQcwODFss2DQaHz0WnV+gKx8QxWrqt2J7OdeLB9wfsd+VNJ/yfk1P74PPpTa46y3UFXBqEOZQSpkyIfcq0nTvZJ8Ay6XHVNeaFYfeKpsaKKbCsTlS46zz36neHcp7KrxMZlFNbDuUwcE25x7uuVsXJ8fTJ8oft/Fe/BzL3Wi657O6a+iU+Z2Xng1kc4kwHHBk32C6bVKN6rfwAN3vpgwZmYQWVWSGSE6fHcLOtKFAsEv8Uocwgf2rZpSbemRGXHZtUGy5wMW1YMbHwmuT3i1niXtcTU/TvJch0RqZtd3CKVduixOCQlPLUJ3SZ2RW2mbwiqf3bO9sD5nIksjvESr7csbitjklBidnIIUCunSNhZ0Ct6CQVGQbbnVtk5tjzZr5aydewXIA7e+mCCRm6/16wTk5g12jRcPrNuKBhjdndU0/d4y5x6qw3uMnmsPYQk4DOOkXB30FB8jetcpw0j77K8TSqTXHadFrKxXkGQ0TBW0/9himM2zmnMgTVP5415RKjptCTbMcvjAoMLW+znjB6tEmZvHfo8pqw3tPkhRpDHevEBY1sRyRFmpkUSq0+uP1m6tZ3/sqk8OGI6sUClUS+ixNeb2wtjAni4RVKuOWko8MwiWHdrBwh7vl1XxzOsO0seO7+5lTOJG691SUNrFItCwrYBFa7HNhmt1ukeeNXy4aCy3prJxSGcPu4mvrp1RSoeHBnKHy85rDTwOxmRry0AIM1AEl6ZeYDBgAA</data>
+        <length>1312</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="9cbbe4944f8a1300e7f701bda310c77f">9cbbe4944f8a1300e7f701bda310c77f</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-09 06:19:57</sys_created_on>
+        <sys_id>50bbe4944f8a1300e7f701bda310c780</sys_id>
+    </sys_attachment_doc>
+</record_update>

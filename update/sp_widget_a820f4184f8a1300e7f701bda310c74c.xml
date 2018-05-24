@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.BasePara {&#13;
+	font-family: Arial;&#13;
+	font-size: 11pt&#13;
+}&#13;
+&#13;
+.BaseHead {&#13;
+	font-family: Arial;&#13;
+	font-size: 14pt;&#13;
+	color: #425563;&#13;
+}&#13;
+.BaseLink {&#13;
+	font-family: Arial;&#13;
+	/*text-decoration: none;*/&#13;
+	style="CURSOR: hand;&#13;
+}&#13;
+.BaseLink:link {&#13;
+	/*color: #007DBA;*/&#13;
+	color: #000000;&#13;
+}&#13;
+.BaseLink:visited {&#13;
+	color: #959595;&#13;
+	&#13;
+}&#13;
+&#13;
+.defaultTableStyle {&#13;
+    border-collapse: collapse;&#13;
+    text-align: left;&#13;
+    font-size: 12px;&#13;
+}&#13;
+&#13;
+    .defaultTableStyle th {&#13;
+        background: #eee;&#13;
+    }&#13;
+&#13;
+    .defaultTableStyle th, .defaultTableStyle td {&#13;
+        border-top: 1px solid #ccc;&#13;
+        border-bottom: 1px solid #ccc;&#13;
+		border-left: 1px solid #ccc;&#13;
+		border-right: 1px solid #ccc;&#13;
+		padding: 6px 8px;&#13;
+        position: relative;&#13;
+        text-align: left;&#13;
+        vertical-align: top;&#13;
+        white-space: nowrap;&#13;
+    }&#13;
+	</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>qnawidget</id>
+        <internal>false</internal>
+        <link/>
+        <name>qnawidget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-09 06:39:54</sys_created_on>
+        <sys_id>a820f4184f8a1300e7f701bda310c74c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>qnawidget</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>sp_widget_a820f4184f8a1300e7f701bda310c74c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-09 06:47:58</sys_updated_on>
+        <template><![CDATA[<div>	
+<div style="font-size:14px;font-family:HP Simplified;color:#000000;text-align:justify">
+<p class="BasePara">The Global SME Q&amp;A is an open forum where users can ask any questions related to the supported tools, e.g. GitHub,VSTS, Jira, Jenkins, Automation Tools, etc.&nbsp;(excluding PPMC). We also regularly cover special discussion topics within these sessions, which may include presentation on new tools or configuration and/or demos. Click <strong><a  class="BaseLink" href="../../../Pages/Ops_Home.aspx#ops_events"  target="_blank">here</a></strong> to view the latest special Q&amp;A topics planned for upcoming sessions.
+<p class="BasePara"><strong>Lync Online Meeting</strong>: <a  class="BaseLink" href="https://join.ucrtc.hpe.com/meet/eugenia.bonafede/25YM2Z58" target="_blank"><strong>https://join.ucrtc.hpe.com/meet/eugenia.bonafede/25YM2Z58</strong></a></p>
+<p class="BasePara"><strong>Join by Phone:</strong><br><span class=baec5a81-e4d6-4674-97f3-e9220f0136c1 style="white-space:nowrap">+1-978-289-4114</span> (USA, Andover, MA)&nbsp;&nbsp;&nbsp;&nbsp; <br><span class=baec5a81-e4d6-4674-97f3-e9220f0136c1 style="white-space:nowrap">+1-678-367-0003 </span>(USA, Atlanta, GA)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><span class=baec5a81-e4d6-4674-97f3-e9220f0136c1 style="white-space:nowrap">+1-512-865-6123 </span>(USA, Austin, TX)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><span class=baec5a81-e4d6-4674-97f3-e9220f0136c1 style="white-space:nowrap">+1-208-629-2920 </span>(USA, Boise, ID)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><span class=baec5a81-e4d6-4674-97f3-e9220f0136c1 style="white-space:nowrap">+1-970-672-4888 </span>(USA, Fort Collins. CO)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><span class=baec5a81-e4d6-4674-97f3-e9220f0136c1 style="white-space:nowrap">+1-281-377-1991 </span>(USA, Houston, TX)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><span class=baec5a81-e4d6-4674-97f3-e9220f0136c1 style="white-space:nowrap">+1-650-300-4050 </span>(USA, Palo Alto, CA)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+<span class=baec5a81-e4d6-4674-97f3-e9220f0136c1 style="white-space:nowrap">+1-855-493-4983 </span>(USA/Canada Customers/Partner)<br>
+  <a class="BaseLink" href="https://join.ucrtc.hpe.com/dialin" target="_blank"><strong>Find a local number</strong></a><strong>. </strong></p>
+<p><strong>Conference ID&nbsp;: </strong><font size=2 face=Arial>712014495</font>. (<em>Please use the Caller Paid Number when calling from an  office location.</em>)</p>
+<table class="defaultTableStyle" align="center" >
+<tbody>
+<tr  class="BasePara">
+<th style="vertical-align:top;color:#fff;background-color:#000000" colspan=4 width="75%"><font color="#ffffff">EDGE Global SME Q&amp;A Sessions</font></th></tr>
+<tr  class="BasePara" bgcolor="#dadada">
+<td height=17><font size=2 face=arial><strong>Region</strong></font></td>
+<td height=17><font size=2 face=arial><strong>Day </strong></font></td>
+<td height=17><font size=2 face=arial><strong>Time </strong></font></td>
+<tr  class="BasePara" bgcolor="#ffffff">
+	<td>&nbsp;<font size=2>Americas / EMEA&nbsp;</font></td>
+	<td>&nbsp;<font size=2>Every Tuesday</font></td>
+	<td>&nbsp;<font size=2>9</font><font size=2>AM- 9:30AM Central Time (<img border=0 alt=Internet src="ico_www_sm.gifx">&nbsp;<a class="BaseLink" href="http://www.timeanddate.com/worldclock/meeting.html?p1=64" target="_blank">CT</a>)</font>
+	</td>
+</tr>
+<tr  class="BasePara" bgcolor="#ffffff">
+	<td>&nbsp;<font size=2>APAC&nbsp;</font></td>
+	<td>&nbsp;<font size=2>Every Wednesday</font></td>
+	<td>&nbsp;<font size=2>2</font><font size=2>AM- 2:30AM Central Time (<img border=0 alt=Internet src="ico_www_sm.gifx">&nbsp;<a class="BaseLink" href="http://www.timeanddate.com/worldclock/meeting.html?p1=64" target="_blank">CT</a>)</font>
+	</td>
+</tr>
+<tr  class="BasePara" bgcolor="#ffffff">
+	<td>&nbsp;<font size=2>Latin America&nbsp;</font></td>
+	<td>&nbsp;<font size=2>Every Tuesday</font></td>
+	<td>&nbsp;<font size=2>1PM- 1:30PM Central Time (<img border=0 alt=Internet src="ico_www_sm.gifx">&nbsp;<a class="BaseLink" href="http://www.timeanddate.com/worldclock/meeting.html?p1=64" target="_blank">CT</a>)</font>
+	</td>
+</tr>
+<tr  class="BasePara" bgcolor="#ffffff">
+	<td>&nbsp;<font size=2>Americas / EMEA&nbsp;</font></td>
+	<td>&nbsp;<font size=2>Every Thursday</font></td>
+	<td>&nbsp;<font size=2>10</font><font size=2>AM- 10:30AM Central Time (<img border=0 alt=Internet src="ico_www_sm.gifx">&nbsp;<a class="BaseLink" href="http://www.timeanddate.com/worldclock/meeting.html?p1=64" target="_blank">CT</a>)</font>
+	</td>
+</tr>
+</tbody></table>
+<p class="BasePara">Please refer <strong><a class="BaseLink" href="../../../../UserReferences/Forms/Meeting%20Notice.aspx" target="_blank">here</a></strong> to download the Q&A Sessions Outlook recurring meeting notices.</p> 
+<p class="BasePara"><strong>Special Q&amp;A sessions</strong>: Recordings and presentations for past sessions can be found <strong><a  class="BaseLink"  href="../../../../UserReferences/Forms/SpecialQASessions.aspx?RootFolder=%2Fteams%2Fedgepresentations%2FUserReferences%2FSpecialQASessions&FolderCTID=SpecialQASessions&View=SpecialQASessions" target="_blank">here</a></strong>.</p>
+</div>
+  </div>]]></template>
+    </sp_widget>
+</record_update>

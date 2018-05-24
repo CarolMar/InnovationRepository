@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function () {
+	//nothing to do here
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.panel {
+    margin-top: 10px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{"options": 
+	{
+		"zone": "America/Los_Angeles",
+		"title": "San Diego, CA",
+		"c_color": "blue"
+	}
+}</demo_data>
+        <description/>
+        <docs/>
+        <field_list>title</field_list>
+        <has_preview>true</has_preview>
+        <id>embeddedclock</id>
+        <internal>false</internal>
+        <link><![CDATA[function (scope, $element, attrs) {
+	var element = $element[0];
+	cacheElementSize(scope, element);
+	$(window).on('resize', onWindowResize);
+	// run after layout
+	setTimeout(onWindowResize, 5);
+	
+	function cacheElementSize(scope, element) {
+		var elem = scope.elem = {}
+		elem.w = element.offsetWidth;
+		elem.h = element.offsetHeight;
+		return elem;
+	}
+
+	function onWindowResize() {
+		var elem = scope.elem;
+		var isSizeChanged = elem.w != element.offsetWidth || elem.h != element.offsetHeight;
+		if (isSizeChanged) {
+			elem = cacheElementSize(scope, element);
+			// to stay square, the child width has to be
+			// min of height, width
+			var w = Math.min(elem.h, elem.w);
+			var clock = element.firstChild;
+			clock.style.width = w + "px";
+		}
+	}	
+}]]></link>
+        <name>Embeddedclock</name>
+        <option_schema>[{"name":"zone","default_value":"America/Los_Angeles","section":"Data","label":"TimeZone","type":"string"},{"name":"c_color","default_value":"red","section":"Presentation","label":"Second hand color","type":"string"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function () {
+	  var options = [
+        {zone: "America/Los_Angeles", title: "San Diego"},
+        {zone: "America/Denver", title: "Denver"},
+        {zone: "America/Chicago", title: "Chicago"},
+        {zone: "America/New_York", title: "New York"}
+    ];
+
+    data.clocks = [];
+    for (var i in options) {
+        data.clocks.push($sp.getWidget("widget-cool-clock", options[i]));
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-16 03:29:46</sys_created_on>
+        <sys_id>f0ee793a4f301300e7f701bda310c70d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Embeddedclock</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>sp_widget_f0ee793a4f301300e7f701bda310c70d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-16 03:34:52</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-heading">Time across the US</div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-sm-3" ng-repeat="myClock in c.data.clocks">
+        <sp-widget widget="myClock"></sp-widget>
+      </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

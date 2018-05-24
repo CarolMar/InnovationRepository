@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.BasePara {&#13;
+	font-family: Arial;&#13;
+	font-size: 11pt&#13;
+}&#13;
+.BaseLink {&#13;
+	font-family: Arial;&#13;
+	/*text-decoration: none;*/&#13;
+	style="CURSOR: hand;&#13;
+}&#13;
+.BaseLink:link {&#13;
+	/*color: #007DBA;*/&#13;
+	color: #000000;&#13;
+}&#13;
+.BaseLink:visited {&#13;
+	color: #959595;&#13;
+&#13;
+}&#13;
+.BaseRojo {&#13;
+    font-family: Arial;&#13;
+	font-size: 13pt;&#13;
+	color: #FF0000;&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>eventswidget</id>
+        <internal>false</internal>
+        <link/>
+        <name>EventsWidget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-09 06:33:54</sys_created_on>
+        <sys_id>fe0d68944f8a1300e7f701bda310c732</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>EventsWidget</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>sp_widget_fe0d68944f8a1300e7f701bda310c732</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-09 06:50:07</sys_updated_on>
+        <template><![CDATA[<div>	
+<p class="BasePara">Please visit our <a  class="BaseLink" href="https://dxc.facebook.com/groups/EDGEConnect/events/" target="_blank"><strong>EDGE Connect on Workplace Events</strong></a>.</p>
+
+<table width="100%" border="0" cellspacing="5" cellpadding="5">
+
+	<tr>
+     <td ><img src="Apr2018.gifx" alt="" width="66" height="57" /></td>
+     <td  class="BasePara"><strong>Session 90 - A Corporate Knowledge Management Solution for DXC</strong>: <br/>
+	The DXC KM group presents the DXC strategy, vision and roadmap for knowledge management. 
+	Plus, how they are sharing this with the various stakeholder and business groups within DXC, whilst collecting their feedback and requirements. <br/>    
+	<strong> Q&amp;A Session is scheduled on April 10<sup>th </sup><em>(9-9:30 AM CST)</em> and 12<sup>th </sup><em>(10-10:30 AM CST)</em> 2018 <br />
+	(for connection information please refer <a  class="BaseLink"  href="javascript:void(0)" target="_blank">here</a>)</strong>
+	</td>
+	</tr>
+	
+	<tr>
+     <td ><img src="Apr2018.gif" alt="" width="66" height="57" /></td>
+     <td  class="BasePara"><strong>Session 91 - Artifactory Migration</strong>: <br/>
+	This session introduces Artifactory as a replacement for Nexus and outlines the migration plans for teams currently using Nexus.<br/>    
+	<strong> Q&amp;A Session is scheduled on April 17<sup>th </sup><em>(9-9:30 AM &amp; 1-1:30 PM CST)</em> and 19<sup>th </sup><em>(10-10:30 AM CST)</em> 2018 <br />
+	For APAC there will be an Open Q&amp;A Session, where users can join to ask questions.<br />
+	(for connection information please refer <a  class="BaseLink"  href="javascript:void(0)" target="_blank">here</a>)</strong>
+	</td>
+	</tr>
+
+	<tr>
+     <td ><img src="Apr2018.gifx" alt="" width="66" height="57" /></td>
+     <td  class="BasePara"><strong>Session 92 - ChatBot Manager - How to train your Bot</strong>: <br/>
+	This session shows a real chatbot example related to the Sharepoint Migration to DXC and walks you through the 'training' process we already did. You can't miss it!.<br/>    
+	<strong> Q&amp;A Session is scheduled on April 24<sup>th </sup><em>(9-9:30 AM &amp; 1-1:30 PM CST)</em>, 25<sup>th </sup><em>(2-2:30 AM CST)</em> and 26<sup>th </sup><em>(10-10:30 AM CST)</em> 2018<br />
+	(for connection information please refer <a  class="BaseLink"  href="javascript:void(0)" target="_blank">here</a>)</strong>
+	</td>
+	</tr>
+	
+	<tr>
+     <td ><img src="May2018.gifx" alt="" width="66" height="57" /></td>
+     <td  class="BasePara"><strong>Session 93 - DXC Open Source Program</strong>:
+	This session introduces the Official DXC Open Source Program. Attendees will learn about the various modes of use and what action each DXC project team needs to take going forward to ensure compliance.  
+	Highlights include links to required training, the DXC Open Source Review Board and additional materials.<br/>  
+      <strong> Q&amp;A Session is scheduled on May 1<sup>st </sup><em>(9-9:30 AM CST)</em> and 2<sup>nd </sup><em>(2-2:30 AM CST)</em> 2018<br/>  
+      For LATAM there will be an Open Q&amp;A Session, where users can join to ask questions.<br/>  
+	(for connection information please refer <a  class="BaseLink"  href="javascript:void(0)" target="_blank">here</a>)</strong>
+	</td>
+	</tr>
+		
+	<tr>
+     <td ><img src="May2018.gifx" alt="" width="66" height="57" /></td>
+     <td  class="BasePara"><strong>Session 94 - Agile at DXC</strong>: <br/>
+	Sarunas Dargelis, an Agile coach and key leader in the AgileDXC community will provide an update in Agile in DXC.<br/>    
+	<strong> Q&amp;A Session is scheduled on May 3<sup>rd </sup><em>(10-10:30 AM CST)</em> 2018<br />
+	(for connection information please refer <a  class="BaseLink"  href="javascript:void(0)" target="_blank">here</a>)</strong>
+	</td>
+	</tr>
+
+	<tr>
+     <td ><img src="May2018.gifx" alt="" width="66" height="57" /></td>
+     <td  class="BasePara"><strong>Session 95 - GitHub pages</strong>: <br/>
+	This session introduces the GitHub pages feature, showing how you can easily create interactive web pages within GitHub to share content and encourage more collaboration.<br/>    
+	<strong> Q&amp;A Session is scheduled on May 8<sup>th </sup><em>(9-9:30 AM &amp; 1-1:30 PM CST)</em>, 9<sup>th </sup><em>(2-2:30 AM CST)</em> and 10<sup>th </sup><em>(10-10:30 AM CST)</em> 2018 <br />
+	(for connection information please refer <a  class="BaseLink"  href="javascript:void(0)" target="_blank">here</a>)</strong>
+	</td>
+	</tr>
+	
+	<tr>
+     <td ><img src="May2018.gifx" alt="" width="66" height="57" /></td>
+     <td  class="BasePara"><strong>Session 96 - ServiceNow</strong>: <br/>
+	Sean Barrins, the ServiceNow DXC Global Partner Executive, will provide a brief overview of ServiceNow within DXC.<br/>    
+	<strong> Q&amp;A Session is scheduled on May 15<sup>th </sup><em>(9-9:30 AM CST)</em> and 17<sup>th </sup><em>(10-10:30 AM CST)</em> 2018 <br />
+	(for connection information please refer <a  class="BaseLink"  href="javascript:void(0)" target="_blank">here</a>)</strong>
+	</td>
+	</tr>
+
+	<tr>
+     <td ><img src="May2018.gifx" alt="" width="66" height="57" /></td>
+     <td  class="BasePara"><strong>Session 97 - GitHub overview</strong>: <br/>
+	This session provides an overview of the basic concepts of GitHub for new users to the tool, e.g., getting started, installing the client, forks & clones and the recommended developer workflows.<br/>    
+	<strong> Q&amp;A Session is scheduled on May 15<sup>th </sup><em>(1-1:30 PM CST)</em> and 16<sup>th </sup><em>(2-2:30 AM CST)</em><br />
+	(for connection information please refer <a  class="BaseLink"  href="javascript:void(0)" target="_blank">here</a>)</strong>
+	</td>
+	</tr>	
+	
+	<tr>
+	<td>&nbsp; </td>
+    <td class="BasePara"><p> For previous Q&amp;A Sessions, please go to <a class="BaseLink" href="javascript:void(0)" target="_blank"><strong>QA Sessions Library.
+		</strong></a>
+		</p>
+	</td>
+    </tr>
+	
+</table>
+
+  </div>]]></template>
+    </sp_widget>
+</record_update>
