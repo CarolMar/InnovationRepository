@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
+        <sp_angular_provider display_value="newSpDropdownTree">74f8fbe24f1e1300e7f701bda310c742</sp_angular_provider>
+        <sp_widget display_value="NewHeaderMenu">dd67bbe24f1e1300e7f701bda310c77c</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-29 07:19:10</sys_created_on>
+        <sys_id>2e09fbe24f1e1300e7f701bda310c746</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>newSpDropdownTree.NewHeaderMenu</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_2e09fbe24f1e1300e7f701bda310c746</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-29 07:19:10</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+</record_update>
