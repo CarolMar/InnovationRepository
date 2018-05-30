@@ -8,36 +8,36 @@
         <display_2/>
         <display_date/>
         <filter/>
-        <glyph>heart</glyph>
+        <glyph>check</glyph>
         <hint/>
         <kb_article/>
         <kb_category/>
         <kb_topic/>
-        <label>Menu2</label>
+        <label>Appplication Management Services</label>
         <order>200</order>
         <record_script/>
         <sc_cat_item/>
         <sc_category/>
         <short_description/>
-        <sp_page/>
+        <sp_page display_value="myhome">26a8905a4f701300e7f701bda310c7ab</sp_page>
         <sp_rectangle_menu/>
-        <sp_rectangle_menu_item/>
+        <sp_rectangle_menu_item display_value="Application Services">468849fa4f9e1300e7f701bda310c72a</sp_rectangle_menu_item>
         <sys_class_name>sp_rectangle_menu_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-03-19 07:05:59</sys_created_on>
-        <sys_id>7fcc4efb4fb01300e7f701bda310c7f1</sys_id>
+        <sys_created_on>2018-05-29 13:12:45</sys_created_on>
+        <sys_id>79e9093e4f9e1300e7f701bda310c732</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Menu2</sys_name>
+        <sys_name>Appplication Management Services</sys_name>
         <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
-        <sys_update_name>sp_rectangle_menu_item_7fcc4efb4fb01300e7f701bda310c7f1</sys_update_name>
+        <sys_update_name>sp_rectangle_menu_item_79e9093e4f9e1300e7f701bda310c732</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-03-19 07:05:59</sys_updated_on>
+        <sys_updated_on>2018-05-29 13:12:45</sys_updated_on>
         <table/>
         <type>page</type>
         <url/>
         <url_target/>
     </sp_rectangle_menu_item>
-    <sys_translated_text action="delete_multiple" query="documentkey=7fcc4efb4fb01300e7f701bda310c7f1"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=79e9093e4f9e1300e7f701bda310c732"/>
 </record_update>
