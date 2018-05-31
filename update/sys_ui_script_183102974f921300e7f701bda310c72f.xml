@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Used in phonton pages</description>
+        <global>false</global>
+        <name>x_203882_innovate.showOneDivHideOthers</name>
+        <script><![CDATA[function showOneDivHideOthers(ShowDiv, HideDiv)
+{
+   var mydiv2 = document.getElementById(ShowDiv);
+   mydiv2.style.visibility="";
+   mydiv2.style.display="";
+   
+   var mydiv1 = document.getElementById(HideDiv);
+   mydiv1.style.visibility="";
+   mydiv1.style.display="none";
+}
+]]></script>
+        <script_name>showOneDivHideOthers</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-31 06:36:29</sys_created_on>
+        <sys_id>183102974f921300e7f701bda310c72f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_203882_innovate.showOneDivHideOthers</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>sys_ui_script_183102974f921300e7f701bda310c72f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-31 06:36:29</sys_updated_on>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

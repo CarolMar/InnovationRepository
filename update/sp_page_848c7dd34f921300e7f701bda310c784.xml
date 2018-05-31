@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure>Jenkins Home</dynamic_title_structure>
+        <id>jenkinshome</id>
+        <internal>false</internal>
+        <public>true</public>
+        <roles/>
+        <short_description>this is the Jenkins home page</short_description>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-31 06:10:28</sys_created_on>
+        <sys_id>848c7dd34f921300e7f701bda310c784</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>jenkinshome</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>sp_page_848c7dd34f921300e7f701bda310c784</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-31 06:11:20</sys_updated_on>
+        <title>JenkinsHome</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=848c7dd34f921300e7f701bda310c784"/>
+</record_update>

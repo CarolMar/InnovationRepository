@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css>.pagefooter {&#13;
+	width: 1000px;&#13;
+	margin: 0 auto; /*changed bottom from auto*/&#13;
+	text-align: right;&#13;
+	background-color: #3a3f51;&#13;
+	font-family: Metric;&#13;
+    height:60px;&#13;
+}&#13;
+&#13;
+.pagefooter ul li {&#13;
+	margin: 0 1px 0 12px;&#13;
+	padding: 0;&#13;
+	list-style-type: none;&#13;
+	display: inline;&#13;
+	font-size: 10pt;&#13;
+	color: #ffffff;&#13;
+}&#13;
+.pagefooter a	{&#13;
+	color:#000;&#13;
+}&#13;
+.pagefooter ul li a {&#13;
+	margin: 0;&#13;
+	padding: 0 6px 0 0;&#13;
+	color: #ffffff;&#13;
+}&#13;
+#copyright p {&#13;
+	color: #000;&#13;
+	font-size: .75em;&#13;
+	line-height: 1.4em;&#13;
+	margin: 0;&#13;
+	padding: 9px 18px 22px 0;&#13;
+}&#13;
+&#13;
+</css>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">0c767ddf4f521300e7f701bda310c7df</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-31 05:43:59</sys_created_on>
+        <sys_id>84767ddf4f521300e7f701bda310c7e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>sp_instance_84767ddf4f521300e7f701bda310c7e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-31 05:43:59</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<div class=\"pagefooter\"><br />\n<ul>\n<ul>&nbsp;\n<li style=\"float: left; font-weight: bold;\">Follow us at:</li>\n<li style=\"float: left;\">\n<div style=\"position: relative; width: 100%;\">\n<div style=\"width: 25px; height: 25px; margin-top: 0px; float: left; background: url('yammer_wht_25px.pngx') no-repeat center center;\">&nbsp;</div>\n<div style=\"float: left; margin-top: 2px;\"><a href=\"https://www.yammer.com/csc.com/#/home\">&nbsp;YAMMER@DXC</a></div>\n</div>\n</li>\n<li style=\"float: left;\">\n<div style=\"position: relative; width: 100%;\">\n<div style=\"width: 25px; height: 25px; margin-top: 0px; float: left; background: url('workplace_wht_25px.pngx') no-repeat center center;\">&nbsp;</div>\n<div style=\"float: left; margin-top: 2px;\"><a href=\"https://dxc.facebook.com\">ORKPLACE@DXC</a></div>\n</div>\n</li>\n<li style=\"float: left;\">\n<div style=\"position: relative; width: 100%;\">\n<div style=\"width: 25px; height: 25px; margin-top: 0px; float: left; background: url('github_wht_25px.pngx') no-repeat center center;\">&nbsp;</div>\n<div style=\"float: left; margin-top: 2px;\"><a href=\"https://github.dxc.com/\">&nbsp;GITHUB@DXC</a></div>\n</div>\n</li>\n<li><strong>&copy; DXC Technology</strong></li>\n</ul>\n</ul>\n<br />\n<ul>\n<ul>&nbsp;</ul>\n</ul>\n</div>",
+		"displayValue": "<div class=\"pagefooter\"><br />\n<ul>\n<ul>&nbsp;\n<li style=\"float: left; font-weight: bold;\">Follow us at:</li>\n<li style=\"float: left;\">\n<div style=\"position: relative; width: 100%;\">\n<div style=\"width: 25px; height: 25px; margin-top: 0px; float: left; background: url('yammer_wht_25px.pngx') no-repeat center center;\">&nbsp;</div>\n<div style=\"float: left; margin-top: 2px;\"><a href=\"https://www.yammer.com/csc.com/#/home\">&nbsp;YAMMER@DXC</a></div>\n</div>\n</li>\n<li style=\"float: left;\">\n<div style=\"position: relative; width: 100%;\">\n<div style=\"width: 25px; height: 25px; margin-top: 0px; float: left; background: url('workplace_wht_25px.pngx') no-repeat center center;\">&nbsp;</div>\n<div style=\"float: left; margin-top: 2px;\"><a href=\"https://dxc.facebook.com\">ORKPLACE@DXC</a></div>\n</div>\n</li>\n<li style=\"float: left;\">\n<div style=\"position: relative; width: 100%;\">\n<div style=\"width: 25px; height: 25px; margin-top: 0px; float: left; background: url('github_wht_25px.pngx') no-repeat center center;\">&nbsp;</div>\n<div style=\"float: left; margin-top: 2px;\"><a href=\"https://github.dxc.com/\">&nbsp;GITHUB@DXC</a></div>\n</div>\n</li>\n<li><strong>&copy; DXC Technology</strong></li>\n</ul>\n</ul>\n<br />\n<ul>\n<ul>&nbsp;</ul>\n</ul>\n</div>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=84767ddf4f521300e7f701bda310c7e1"/>
+</record_update>

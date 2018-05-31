@@ -2,7 +2,22 @@
 <record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}
+
+function showOneDivHideOthers(ShowDiv, HideDiv)
+{
+   var mydiv2 = document.getElementById(ShowDiv);
+   mydiv2.style.visibility="";
+   mydiv2.style.display="";
+   
+   var mydiv1 = document.getElementById(HideDiv);
+   mydiv1.style.visibility="";
+   mydiv1.style.display="none";
+}
+]]></client_script>
         <controller_as>c</controller_as>
         <css>.nav&#13;
 {&#13;
@@ -33,23 +48,26 @@ body&#13;
         <internal>false</internal>
         <link/>
         <name>MyTabWidget</name>
-        <option_schema/>
+        <option_schema>[{"name":"pagename","section":"other","default_value":"Home","label":"PageName","type":"string"}]</option_schema>
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
-	var target = new GlideRecord('x_203882_innovate_myassets'); 
-  target.addQuery('inuse',true);
-  target.query(); // Issue the query to the database to get relevant records  	
-	var options = [];
-	while (target.next()) {
+	var gr = new GlideRecord('x_203882_innovate_myassets'); 
+    gr.addQuery("inuse",true);
+	gr.addQuery("pagename",options.pagename);//get data from widget options
+	gr.orderBy("taborder");
+    gr.query(); // Issue the query to the database to get relevant records  	
+	var assets = [];
+	while (gr.next()) {
 			 var item = {};
-       item.title=target.getDisplayValue("assetname");
-		   item.html=target.getDisplayValue("htmlcontent");
-			 options.push(item);
+         item.title=gr.getDisplayValue("assetname");
+		   item.html=gr.getDisplayValue("htmlcontent");
+		   item.tabTitle=gr.getDisplayValue("tabtitle");
+		  assets.push(item);
 		}
-	
+	data.assets=assets;
 /*data.listOpt1 = {
    "secondary_fields":"u_choice_1",
    "always_show":"true",
@@ -66,11 +84,11 @@ body&#13;
     ];*/
 
     data.htmlWidgets = [];
-    for (var i in options) {
+    for (var i in assets) {
 			  var htmlwidget={};
-			   htmlwidget.widget=$sp.getWidget("overviewwidget", options[i]);
-			   htmlwidget.id=options[i].title;
-		       if(options[i].title=='overview')
+			   htmlwidget.widget=$sp.getWidget("overviewwidget", assets[i]);
+			   htmlwidget.id=assets[i].title;
+		       if(i==0)
 				   htmlwidget.cssclass="tab-pane fade in active";
 				   else
 					htmlwidget.cssclass='tab-pane fade'   ;
@@ -87,51 +105,31 @@ body&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-19 03:43:00</sys_created_on>
         <sys_id>7faed97f4f301300e7f701bda310c71e</sys_id>
-        <sys_mod_count>116</sys_mod_count>
+        <sys_mod_count>132</sys_mod_count>
         <sys_name>MyTabWidget</sys_name>
         <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
         <sys_update_name>sp_widget_7faed97f4f301300e7f701bda310c71e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-17 07:30:00</sys_updated_on>
+        <sys_updated_on>2018-05-31 06:48:03</sys_updated_on>
         <template><![CDATA[<div >
 <!-- your widget template -->
 <div class="container">
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#overview">Overview</a></li>
-    <li><a data-toggle="tab" href="#aboutus">About us</a></li>
-    <li><a data-toggle="tab" href="#news">News</a></li>
-    <li><a data-toggle="tab" href="#events">Events</a></li>
-    <li><a data-toggle="tab" href="#qasessions">QnA Sessions</a></li>
-    <li><a data-toggle="tab" href="#test1">test1</a></li>
-    <li><a data-toggle="tab" href="#test2">test2</a></li>
+    <li ng-repeat="asset in c.data.assets" ng-class="{active: $index == 0 }"><a data-toggle="tab" href="#{{asset.title}}">{{asset.tabTitle}}</a></li>
   </ul>  
   <div class="tab-content" >
     <div id={{htmlwidget.id}} class="{{htmlwidget.cssclass}}" ng-repeat="htmlwidget in c.data.htmlWidgets">
       <sp-widget widget="htmlwidget.widget"></sp-widget>
       </div>
-    <!--<div id="overview" class="tab-pane fade in active">
-      <sp-widget widget="data.htmlWidgets[0]"></sp-widget>
-    </div>
-    <div id="aboutus" class="tab-pane fade">
-      <sp-widget widget="data.htmlWidgets[1]"></sp-widget>
-    </div>
-    <div id="news" class="tab-pane fade">
-      <widget id="opsnewswidget"></widget>
-    </div> 
-     <div id="events" class="tab-pane fade">
-        <widget id="eventswidget"></widget>
-    </div>
-    <div id="qasessions" class="tab-pane fade">
-      <widget id="qnawidget"></widget>
-    </div>  -->   
+    <!--
     <div id="test1" class="tab-pane fade">
       <sp-widget widget="data.simpleListWidget"></sp-widget>
     </div>
     <div id="test2" class="tab-pane fade">
       <sp-widget widget="data.dataTableWidget"></sp-widget>
-    </div> 
+    </div> --> 
   </div>
 </div>
 </div>]]></template>
