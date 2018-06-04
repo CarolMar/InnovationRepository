@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>newIconMenuTemplate</id>
+        <sp_widget display_value="NewIconMenuList">b08be69b4fd21300e7f701bda310c729</sp_widget>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-04 03:34:37</sys_created_on>
+        <sys_id>9b8eb5e04f221300e7f701bda310c7ba</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>newIconMenuTemplate</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>sp_ng_template_9b8eb5e04f221300e7f701bda310c7ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-04 03:54:29</sys_updated_on>
+        <template><![CDATA[<a ng-if="item.items.length == 0 && !item.scriptedItems" ng-href="{{::item.href}}" target="{{::item.url_target}}" title="{{::item.hint}}">
+   <i ng-if="::item.glyph" class="fa fa-{{::item.glyph}} m-r-sm"></i>
+   <i ng-if="::!item.glyph" class="fa fa-chevron-right m-r-sm"></i> {{::item.label}}
+</a>
+
+<a role="button" ng-if="item.items.length > 0" href class="dropdown-toggle sp-menu-has-items" data-toggle="dropdown" aria-controls="menu-apply" aria-haspopup="true" title="{{::item.hint}}">
+   <i ng-if="::item.glyph" class="fa fa-{{::item.glyph}} m-r-sm"></i>
+   <i ng-if="::!item.glyph" class="fa fa-chevron-right m-r-sm"></i> {{::item.label}}
+   <span class="caret"></span>
+</a>
+<ul ng-if="item.items.length > 0" class="dropdown-menu" role="group" id="menu-apply">
+  <li ng-if="item.items.length== 0" ng-repeat="item in item.items" ng-include="'newIconMenuTemplate'"/>
+  <li ng-if="item.items.length > 0" ng-repeat="item in item.items" ng-include="'newIconMenuTemplate'" class="dropdown-submenu"/>
+</ul>
+<a role="button" ng-if="item.scriptedItems.count > 0" href data-toggle="dropdown" title="{{::item.hint}}">
+  <fa ng-if="::item.glyph" name="{{::item.glyph}}"></fa>
+  <span ng-bind-html="::item.label"></span>
+  <span ng-if="::!item.scriptedItems.omitBadge" class="label label-as-badge label-primary sp-navbar-badge-count">{{item.scriptedItems.count}}</span>
+</a>
+]]></template>
+    </sp_ng_template>
+</record_update>
