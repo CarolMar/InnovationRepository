@@ -34,10 +34,10 @@ body&#13;
         <docs/>
         <field_list/>
         <has_preview>true</has_preview>
-        <id>mytabwidget</id>
+        <id/>
         <internal>false</internal>
         <link/>
-        <name>MyTabWidget</name>
+        <name>Copy of MyTabWidget</name>
         <option_schema>[{"name":"pagename","section":"other","default_value":"Home","label":"PageName","type":"string"}]</option_schema>
         <public>false</public>
         <roles/>
@@ -46,58 +46,48 @@ body&#13;
   /* e.g., data.table = $sp.getValue('table'); */
 	var gr = new GlideRecord('x_203882_innovate_myassets'); 
     gr.addQuery("inuse",true);
-	  gr.addQuery("pagename",options.pagename);//get data from widget options
-	  gr.addQuery("parenttab","");
-	  gr.orderBy("taborder");
+	gr.addQuery("pagename",options.pagename);//get data from widget options
+	gr.orderBy("taborder");
     gr.query(); // Issue the query to the database to get relevant records  	
-	  var assets = [];
-	  while (gr.next()) {
+	var assets = [];
+	while (gr.next()) {
 			 var item = {};
          item.title=gr.getDisplayValue("assetname");
-		     item.html=gr.getDisplayValue("htmlcontent");
-		     item.tabTitle=gr.getDisplayValue("tabtitle");
-		     item.hassubtab=gr.getDisplayValue("hassubtab");
-		     assets.push(item);
-		 }
-	  data.assets=assets;
+		   item.html=gr.getDisplayValue("htmlcontent");
+		   item.tabTitle=gr.getDisplayValue("tabtitle");
+		  assets.push(item);
+		}
+	data.assets=assets;
     data.htmlWidgets = [];
     for (var i in assets) {
-			  var htmlwidget={};		       
-			      htmlwidget.widget=$sp.getWidget("overviewwidget", assets[i]);
-		        htmlwidget.hassubtab=assets[i].hassubtab;
-		        if(assets[i].hassubtab)
-				    {
-					    var content={};
-					    content.pagename=options.pagename;
-					    content.parenttab=assets[i].tabTitle;
-					    htmlwidget.subwidget=$sp.getWidget("mycontentwidget", content);
-				    }
-			      htmlwidget.id=assets[i].title;
-		        if(i==0)
-				    htmlwidget.cssclass="tab-pane fade in active";
-				    else
-					  htmlwidget.cssclass='tab-pane fade'   ;
-            data.htmlWidgets.push(htmlwidget);
+			  var htmlwidget={};
+			   htmlwidget.widget=$sp.getWidget("overviewwidget", assets[i]);
+			   htmlwidget.id=assets[i].title;
+		       if(i==0)
+				   htmlwidget.cssclass="tab-pane fade in active";
+				   else
+					htmlwidget.cssclass='tab-pane fade'   ;
+        data.htmlWidgets.push(htmlwidget);
     }
 	
-	  //var simpleListOptions = {"table": "incident","display_field": "number","maximum_entries":"5"};
-    //data.simpleListWidget = $sp.getWidget('widget-simple-list', simpleListOptions);
-	  //var dataTableOptions={"table":"kb_knowledge","fields":"","title":"Knowledge"};
-		//data.dataTableWidget=$sp.getWidget('widget-data-table',dataTableOptions);
+	 var simpleListOptions = {"table": "incident","display_field": "number","maximum_entries":"5"};
+    data.simpleListWidget = $sp.getWidget('widget-simple-list', simpleListOptions);
+	  var dataTableOptions={"table":"kb_knowledge","fields":"","title":"Knowledge"};
+		data.dataTableWidget=$sp.getWidget('widget-data-table',dataTableOptions);
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-03-19 03:43:00</sys_created_on>
-        <sys_id>7faed97f4f301300e7f701bda310c71e</sys_id>
-        <sys_mod_count>171</sys_mod_count>
-        <sys_name>MyTabWidget</sys_name>
+        <sys_created_on>2018-06-05 06:34:28</sys_created_on>
+        <sys_id>a0f1bb3c4f621300e7f701bda310c71f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of MyTabWidget</sys_name>
         <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
-        <sys_update_name>sp_widget_7faed97f4f301300e7f701bda310c71e</sys_update_name>
+        <sys_update_name>sp_widget_a0f1bb3c4f621300e7f701bda310c71f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-12 07:01:39</sys_updated_on>
+        <sys_updated_on>2018-06-05 06:34:28</sys_updated_on>
         <template><![CDATA[<div >
 <!-- your widget template -->
 <div class="container">
@@ -107,7 +97,6 @@ body&#13;
   <div class="tab-content" >
     <div id={{htmlwidget.id}} class="{{htmlwidget.cssclass}}" ng-repeat="htmlwidget in c.data.htmlWidgets">
       <sp-widget widget="htmlwidget.widget"></sp-widget>
-      <div ng-if="htmlwidget.hassubtab"> <sp-widget widget="htmlwidget.subwidget"></sp-widget><div>
       </div>       
   </div>
 </div>

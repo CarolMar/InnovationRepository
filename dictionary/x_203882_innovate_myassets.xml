@@ -3,14 +3,19 @@
     <element label="MyAssets" max_length="40" name="x_203882_innovate_myassets" type="collection">
         <element display="true" label="AssetName" mandatory="true" max_length="255" name="assetname" type="string_full_utf8"/>
         <element label="Description" max_length="255" name="description" type="string_full_utf8"/>
+        <element default="False" label="HasSubTab" max_length="40" name="hassubtab" type="boolean"/>
         <element label="HTMLContent" max_length="8000" name="htmlcontent" type="html"/>
         <element label="InUse" max_length="40" name="inuse" type="boolean"/>
         <element label="PageName" mandatory="true" max_length="255" name="pagename" type="string"/>
+        <element label="ParentTab" max_length="32" name="parenttab" reference="x_203882_innovate_myassets" type="reference"/>
         <element label="ReferenceToTable1" max_length="32" name="referencetomyassets" reference="x_203882_innovate_table1" type="reference"/>
         <element default="1" label="TabOrder" mandatory="true" max_length="3" name="taborder" type="longint"/>
         <element label="TabTitle" mandatory="true" max_length="255" name="tabtitle" type="string"/>
         <index name="index">
             <element name="referencetomyassets"/>
+        </index>
+        <index name="index2">
+            <element name="parenttab"/>
         </index>
     </element>
 </database>

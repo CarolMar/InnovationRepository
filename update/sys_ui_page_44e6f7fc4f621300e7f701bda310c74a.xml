@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_203882_innovate_GithubOverviewPage.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GitHub Overview</title>
+<style type="text/css">
+.BasePara {
+	font-family: Arial;
+	font-size: 11pt
+}
+.BaseHead {
+	font-family: Arial;
+	font-size: 14pt;
+	color: #000000;
+}
+.BaseLink {
+	font-family: Arial;
+	/*text-decoration: none;*/
+	style="CURSOR: hand;
+}
+.BaseLink:link {
+	/*color: #007DBA;*/
+	color: #000000;
+}
+.BaseLink:visited {
+	color: #959595;
+	
+}
+
+.defaultTableStyle {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 12px;
+}
+
+    .defaultTableStyle th {
+        background: #eee;
+    }
+
+    .defaultTableStyle th, .defaultTableStyle td {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		padding: 6px 8px;
+        position: relative;
+        text-align: left;
+        vertical-align: top;
+
+    }
+
+	
+}
+</style>
+</head>
+
+<body>
+
+<p class="BasePara">
+  <script>
+function showOneDivHideOthers(ShowDiv, HideDiv1, HideDiv2, HideDiv3)
+{
+   var mydiv = document.getElementById(ShowDiv);
+   mydiv.style.visibility="";
+   mydiv.style.display="";
+   
+   var mydiv1 = document.getElementById(HideDiv1);
+   mydiv1.style.visibility="";
+   mydiv1.style.display="none";
+   
+   var mydiv2 = document.getElementById(HideDiv2);
+   mydiv2.style.visibility="";
+   mydiv2.style.display="none";
+   
+   var mydiv3 = document.getElementById(HideDiv3);
+   mydiv3.style.visibility="";
+   mydiv3.style.display="none";
+}
+
+  </script>
+There are several key topics it is important to be familiar with when starting to use GitHub, click on each of topics to get more information.
+</p>
+<form>
+  <p align="center">
+    <input type="button" style="border: 0px; background-color: #000000; FONT-SIZE: 11pt; FONT-FAMILY: Arial; TEXT-ALIGN: justify; color: #FFFFFF; height: 27pt; width: 200px; text-align:center; margin-left:20px;" value="Organization vs Repo" onclick="showOneDivHideOthers('mydiv','mydiv1', 'mydiv2', 'mydiv3')"/>
+
+    <input type="button" style="border: 0px; background-color: #000000; FONT-SIZE: 11pt; FONT-FAMILY: Arial; TEXT-ALIGN: justify; color: #FFFFFF; height: 27pt; width: 200px; text-align:center;margin-left:20px;" value="GitHub Clients" onclick="showOneDivHideOthers('mydiv1','mydiv', 'mydiv2', 'mydiv3')"/>
+  </p>
+  <p align="center">
+    <input type="button" style="border: 0px; background-color: #000000; FONT-SIZE: 11pt; FONT-FAMILY: Arial; TEXT-ALIGN: justify; color: #FFFFFF; height: 27pt;width: 200px;text-align:center;margin-left:20px;" value="Fork vs Clone" onclick="showOneDivHideOthers('mydiv2', 'mydiv','mydiv1', 'mydiv3')"/>
+    
+    <input type="button" style="border: 0px; background-color: #000000; FONT-SIZE: 11pt; FONT-FAMILY: Arial; TEXT-ALIGN: justify; color: #FFFFFF; height: 27pt;width: 200px;text-align:center;margin-left:20px;" value="GitHub Workflow" onclick="showOneDivHideOthers('mydiv3', 'mydiv','mydiv1', 'mydiv2')"/>
+    </p>
+</form>
+<div id="mydiv" style="visibility:hidden">
+  <p class="BasePara">Once registered in GitHub you can create an <strong><a class="BaseLink" href="https://help.github.com/enterprise/2.11/user/articles/collaborating-with-groups-in-organizations/" target="_blank"> organization</a></strong> and/or a <strong><a class="BaseLink" href="https://help.github.com/enterprise/2.11/user/articles/create-a-repo/" target="_blank">repository</a></strong>. These are described in more detail below:</p>
+  <ul>
+  <li class="BasePara">Organizations are a container that can include multiple Git repositories, provide enhanced <strong><a class="BaseLink" href="https://help.github.com/articles/adding-organization-members-to-a-team/" target="_blank">user management</a></strong> across multiple repos and also supports multiple administrators. An organization is  recommended for projects working on customer accounts, specifically where the content is considered customer intellectual property. Additionally, they may be useful for large internal teams, where although they may be working on DXC content, they require multiple repos that need to be accessible by the same set of users, e.g., Platform DXC. It is not appropriate for small teams.</li>
+  <li class="BasePara">Repositories are individual containers for content. They are created either in the context of a specific user or an organization. For the former, the repos are solely owned and administered by that user and the repo path has the username for in it's path. For the latter, the repo is owned by the organization, so has the organization in the repo path and is administered by one or more users designated with that role.</li>
+  <li class="BasePara">Repositories can   be public or private. Public repos are visible to all users registered users on the GitHub instance, although update access is limited to <a  class="BaseLink" accesskey="" href="https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/" target="_blank"><strong>users defined as collaborators</strong></a> for that repo. Private repos are only accessible to designated users.</li>
+  </ul>
+  <p class="BasePara" align="center"> <img src="../../../PublishingImages/GH-OrgRepo.gif" alt="" width="689" height="160"  /></p>
+  <p class="BasePara">To see the organizations and repositories associated with your user account, click on the down arrow next to your user name and select the <strong>Your Profile</strong> option.</p>
+  <p class="BasePara">For more information about managing an organization click <strong><a class="BaseLink" href="https://help.github.com/articles/collaborating-with-groups-in-organizations/" target="_blank">here</a></strong>. For more information about managing user repos click <strong><a class="BaseLink" href="https://help.github.com/categories/setting-up-and-managing-your-github-user-account/" target="_blank">here</a></strong>.</p>
+  <p class="BasePara"><em>Note: To add other users to an organization or  repository, they must already be registered as a user in GitHub, i.e., they must connect first to create an account.</em></p>
+</div>
+<div id="mydiv1" style="visibility:hidden">
+  <p class="BasePara">GitHub Enterprise can be accessed via the GitHub web browser interface, the GitHub desktop client, Git command line or an integrated Git client in and IDE.</p>
+  <p class="BasePara">Most of us will use the web interface to manage repositories and user profiles. Users will also typically clone GitHub repos on their local computer to work, so need a Git Client installed, i.e., command line, GitHub client or IDE. Instructions for setup are provided below.</p>
+  <ul>
+  <li class="BasePara"><strong>GitHub web Interface</strong>: This is used to create and manage organizations and repositories and more. It also supports basic file edit. To access the web interface you should use the appropriate GitHub URL, e.g., for Inner-Source visit <a class="BaseLink" href="https://github.dxc.com/" target="_blank"><strong>https://github.dxc.com</strong></a> and login using GlobalPass single-sign on.</li>
+  <li class="BasePara"><strong>GitHub desktop client</strong>: This can be used to manage commits and synchronize them from the local Git repository to the master repository. The client can be downloaded <a class="BaseLink" href="https://desktop.github.com/"  target="_blank"><strong>here</strong></a> with more detailed information <a class="BaseLink" href="https://help.github.com/desktop/guides/"  target="_blank"><strong>here</strong></a>. You may need to use your GitHub <a class="BaseLink" href="https://github.dxc.com/isrc/guidelines/blob/master/QuickStartGuide.md#tokensetup"  target="_blank"><strong>Personal Access Token (PAT)</strong></a> to authenticate depending on which GitHub instance being used.</li>
+  <li class="BasePara"><strong>Git command line</strong>: To use command line, you must install a Git client, such as Git Bash (Windows) or Terminal (Mac, Linux). This set up will require <a class="BaseLink" href="https://github.dxc.com/isrc/guidelines/blob/master/QuickStartGuide.md#sshsetup"  target="_blank"><strong>SSH</strong></a> authentication. For Windows, download and install the <a class="BaseLink" href="https://git-for-windows.github.io/"  target="_blank"><strong>Git Bash</strong></a> client. For Mac, download the Git client <a class="BaseLink" href="https://git-scm.com/download/mac"  target="_blank"><strong>here</strong></a>.</li>
+  <li class="BasePara"><strong>Integrated Git clients</strong>: Refer to the guidance provided with your IDE for how to configure connectivity to GitHub.</li>
+  </ul>
+  <p class="BasePara"><em>Note: The GitHub desktop client is useful for getting started with GitHub, but users should expect to eventually install and use command line in addition to the client, as there are some features that are not available in the client, e.g., addressing complex merge conflicts.</em></p>
+  <p class="BasePara">More detailed instructions for getting started with GitHub are available <a class="BaseLink" href="https://github.dxc.com/isrc/guidelines/blob/master/QuickStartGuide.md" target="_blank"><strong>here</strong></a>.</p>
+</div>
+<div id="mydiv2" style="visibility:hidden">
+  <p class="BasePara">The development workflow that is recommended for projects in a Git-based environment is substantially different than the workflow typically used in a centralized SCM environment, such as CVS/Subversion. At its core, GitHub promotes and supports a decentralized development style and as such doesn't support some concepts, like file-locking, that developers who are accustomed to working in a centralized environment to enable team-based work on a given project.</p>
+  <p class="BasePara">The workflows used in Git are very different. They are built around the concepts of Branch, Clone and Fork:</p>
+  <ul class="BasePara">
+  <li class="BasePara"><strong><a class="BaseLink"  href="https://help.github.com/articles/about-branches/" target="_blank">Branch</a></strong>: A branch is a codeline that creates is a replica of the main codeline, based on the creation date. The branched codeline is then used to separate new development from the mainline and updates are merged as they are deemed complete, including reviews and validation. These are typically referred to as 'feature' branches, where multiple features may be worked on in parallel, but separately, and merged in to the mainline at different times through a <strong><a class="BaseLink" href="https://help.github.com/articles/about-pull-requests/" target="_blank">pull request</a></strong>. Branches are appropriate in most scenarios, but for small teams, with low impact content, e.g., documents that are low criticality and rarely updated, updates may be made directly in the main codeline, but this is typically not recommended.</li>
+  <li class="BasePara"><strong><a class="BaseLink" href="https://help.github.com/articles/cloning-a-repository/" target="_blank">Clone</a></strong>: A clone is a local copy of the master repo, i.e., a repo is cloned to your PC, where you can then work independently on the content from other developers and also you do not require access to the master repo while you're working. When you clone, you are making a replica of the entire repo, rather than a centralized environment, like Subversion, where you check out individual files. Typically, users would create a branch in the clone and work on feature updates, they are committed to the local repo first, then pushed to the master repo in GitHub, where they can then be merged to the mainline by an authorized user through a <strong><a class="BaseLink" href="https://help.github.com/articles/about-pull-requests/" target="_blank">pull request</a></strong>.</li>
+  <li class="BasePara"><strong><a class="BaseLink" href="https://gist.github.com/Chaser324/ce0505fbed06b947d962" target="new">Fork</a></strong>: A fork is a replica of the master repo that is created in GitHub under the requesting users username path. It provides a mechanism for users that are not defined as collaborators for a particular repo, to still contribute to the content. Users fork the repo, then would typically clone locally and essentially the same guidelines as above.</li>
+  </ul>
+  <p class="BasePara" align="center"><img src="../../../PublishingImages/GitHubBranchCloneFork.gif" alt="" width="709" height="147"  /></p>
+</div>
+<div id="mydiv3" style="visibility:hidden">
+  <p class="BasePara">There are many different ways to manage updates to your repo content in GitHub, although the workflows described below are typical for many users:</p>
+  <ul>
+  <li class="BasePara"><strong>Developer Workflow - internal collaborator</strong>: For teams where all contributors are  assigned as collaborators to the repo, i.e., have direct edit access, the typical workflow would be to <strong><a class="BaseLink" href="https://help.github.com/articles/cloning-a-repository/" target="_blank">Clone</a></strong> the repo locally (#1), create a branch in the local clone (#2) and commit updates to that branch in the local clone (#3). When the updates are  ready for review/validation, theys are pushed to the master repo (#4) to create the corresponding feature branch in the master repo. A <strong><a class="BaseLink" href="https://help.github.com/articles/about-pull-requests/" target="_blank">pull request</a></strong> is created (#5) to merge these updates to the master codeline. As part of this process, updates must be reviewed/validated by an authorized user, if it passes this user completes the merge (#6).</li>
+  <li class="BasePara"><strong>Developer Workflow - external collaborator</strong>: For users that wish to contribute to a repo where they are not defined as a direct collaborator, the process would be for that user to first <strong><a class="BaseLink" href="https://gist.github.com/Chaser324/ce0505fbed06b947d962" target="new">fork</a></strong> the master repo, which creates a replica of the repo under their username path (#1). Subsequent steps are then similar to the internal collaborator workflow, except when updates are pushed from the local clone, they are pushed to the fork (#5). A <strong><a class="BaseLink" href="https://help.github.com/articles/about-pull-requests/" target="_blank">pull request</a></strong> is  created to merge the updates from the branch in the fork to main codeline in the master repo (#6). Updates are reviewed/validated by an authorized user for the target repo, if it passes this user completes the merge (#7).</li>
+  </ul>
+  <p><span class="BasePara">These activities can be done through the GitHub Desktop or command line. Typically, new users will find it easier through the desktop, more advanced users will prefer command line.</span>  </p>
+  <p class="BasePara" align="center"><img src="../../../PublishingImages/GitHubWF.gif" alt="" width="722" height="399"  /></p>
+  <p class="BasePara">Note: For small teams, with low impact content, e.g., documents that are low criticality and rarely updated, updates may be made directly in the main codeline in the master repo, but this is typically not recommended.</p>
+</div>
+<p class="BasePara">
+</p>
+<p class="BasePara"></p>
+</body>
+</html>
+
+</j:jelly>]]></html>
+        <name>GithubOverviewPage</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-05 07:00:24</sys_created_on>
+        <sys_id>44e6f7fc4f621300e7f701bda310c74a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>GithubOverviewPage</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>sys_ui_page_44e6f7fc4f621300e7f701bda310c74a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-05 07:04:23</sys_updated_on>
+    </sys_ui_page>
+</record_update>
