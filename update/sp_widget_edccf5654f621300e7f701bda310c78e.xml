@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.nav{&#13;
+  width:450px;&#13;
+  margin-left:300px;&#13;
+  margin-top:10px;&#13;
+  margin-bottom:10px;&#13;
+  background-color:#eee;&#13;
+}&#13;
+.nav-pills &gt; li{&#13;
+  background-color:black;&#13;
+  color:white;&#13;
+  width:200px;&#13;
+  margin-left:5px;&#13;
+  margin-top:5px;&#13;
+  border-radius:4px;&#13;
+}&#13;
+.nav-pills &gt; li.active &gt;a{&#13;
+  background-color:black;&#13;
+  color:white;&#13;
+}&#13;
+.nav-pills &gt; li a, .nav-pills &gt; li a:hover{&#13;
+  background-color:black;&#13;
+  color:white;&#13;
+  text-align:center;&#13;
+  padding:10px 0px;&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>mycontentwidget</id>
+        <internal>false</internal>
+        <link/>
+        <name>myContentWidget</name>
+        <option_schema>[{"name":"pagename","section":"other","default_value":"Jenkins","label":"PageName","type":"string"},{"name":"parenttab","section":"other","default_value":"Overview","label":"ParentTab","type":"string"}]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	var gr = new GlideRecord('x_203882_innovate_myassets'); 
+    gr.addQuery("inuse",true);
+	gr.addQuery("pagename",options.pagename);
+	gr.addQuery("parenttab.tabtitle",options.parenttab);
+	gr.orderBy("taborder");
+	gr.query(); 
+	var assets = [];
+	while (gr.next()) {
+			 var item = {};
+         item.title=gr.getDisplayValue("assetname");
+		   item.html=gr.getDisplayValue("htmlcontent");
+		   item.tabTitle=gr.getDisplayValue("tabtitle");
+		  assets.push(item);
+		}
+	data.assets=assets;
+    data.htmlWidgets = [];
+    for (var i in assets) {
+			  var htmlwidget={};	       
+					  htmlwidget.widget=$sp.getWidget("overviewwidget",assets[i]);
+			      htmlwidget.id=assets[i].title;
+            data.htmlWidgets.push(htmlwidget);
+    }
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-06-07 05:58:00</sys_created_on>
+        <sys_id>edccf5654f621300e7f701bda310c78e</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name>myContentWidget</sys_name>
+        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_update_name>sp_widget_edccf5654f621300e7f701bda310c78e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-06-07 09:37:13</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  
+  
+<ul class="nav nav-pills">
+  <li ng-repeat="asset in c.data.assets" class="nav-item"><a class="nav-link" data-toggle="pill" href="#{{asset.title}}">{{asset.tabTitle}}</a></li>
+  </ul>  
+<div class="tab-content">
+  <div id="{{htmlwidget.id}}" class="tab-pane container fade" ng-repeat="htmlwidget in c.data.htmlWidgets">
+      <sp-widget widget="htmlwidget.widget"></sp-widget>
+  </div>      
+</div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

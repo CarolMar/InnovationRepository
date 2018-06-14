@@ -54,15 +54,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-05-11 09:57:37</sys_created_on>
-        <sys_id>5cb03bf04f021300e7f701bda310c786</sys_id>
+        <sys_id>586671e14f621300e7f701bda310c7e6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_203882_innovate_myassets</sys_name>
         <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
-        <sys_update_name>sys_dictionary_x_203882_innovate_myassets_null</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-11 09:57:37</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_203882_innovate_myassets_NULL</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-06-07 05:30:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

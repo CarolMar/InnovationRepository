@@ -76,7 +76,8 @@ font-family: Arial;&#13;
         <has_preview>true</has_preview>
         <id>overviewwidget</id>
         <internal>false</internal>
-        <link/>
+        <link><![CDATA[
+]]></link>
         <name>OverviewWidget</name>
         <option_schema>[{"name":"html","default_value":" &lt;b&gt;Hello&lt;/b&gt;","section":"Data","label":"HTML","type":"translated_html"}]</option_schema>
         <public>true</public>
@@ -87,14 +88,14 @@ font-family: Arial;&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-05-07 05:47:20</sys_created_on>
         <sys_id>df019ee34f711300e7f701bda310c735</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>OverviewWidget</sys_name>
         <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
         <sys_update_name>sp_widget_df019ee34f711300e7f701bda310c735</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-16 07:29:25</sys_updated_on>
+        <sys_updated_on>2018-06-05 07:26:07</sys_updated_on>
         <template><![CDATA[<div>
   <div ng-if="!c.options.html" class="panel panel-default">
     <div class="panel-body">
@@ -103,6 +104,7 @@ font-family: Arial;&#13;
     </div>
   </div>
   <div ng-if="c.options.html" ng-bind-html="c.html"></div>
-</div>]]></template>
+</div>
+]]></template>
     </sp_widget>
 </record_update>

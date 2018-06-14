@@ -4,7 +4,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>choicecolumn1</element>
-            <list_id display_value="x_203882_innovate_table1" element="NULL" name="x_203882_innovate_table1" parent="NULL" relationship="NULL" sys_domain="global" view="f6232273b8130300651775b34d8f5187">10047ff04f021300e7f701bda310c74d</list_id>
+            <list_id display_value="x_203882_innovate_table1" element="NULL" name="x_203882_innovate_table1" parent="NULL" relationship="NULL" sys_domain="global" view="f6232273b8130300651775b34d8f5187">8576deb54f421300e7f701bda310c72a</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>

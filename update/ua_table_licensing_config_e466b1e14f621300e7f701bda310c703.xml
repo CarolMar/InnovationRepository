@@ -13,13 +13,13 @@
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-05-11 09:57:37</sys_created_on>
-        <sys_id>24b03bf04f021300e7f701bda310c797</sys_id>
+        <sys_id>e466b1e14f621300e7f701bda310c703</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_203882_innovate_myassets</sys_name>
         <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
-        <sys_update_name>ua_table_licensing_config_24b03bf04f021300e7f701bda310c797</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_e466b1e14f621300e7f701bda310c703</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-05-11 09:57:37</sys_updated_on>
     </ua_table_licensing_config>
