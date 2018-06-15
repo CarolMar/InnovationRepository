@@ -4,36 +4,38 @@
         <active>true</active>
         <class_name/>
         <color>default</color>
-        <css/>
-        <glyph>chevron-right</glyph>
+        <css>.iconlink{&#13;
+  background-color:#3a3f51;&#13;
+}</css>
+        <glyph>cogs</glyph>
         <id/>
         <kb_article/>
         <kb_category/>
         <kb_topic/>
-        <order>2</order>
+        <order>1</order>
         <roles/>
         <sc_cat_item/>
         <sc_category/>
-        <short_description>Tell us what you think! We want to know your thoughts and ideas about this site.</short_description>
+        <short_description/>
         <size>md</size>
-        <sp_column display_value="1">848cfdd34f921300e7f701bda310c703</sp_column>
+        <sp_column display_value="4">87a3df044fba1300e7f701bda310c70b</sp_column>
         <sp_page/>
         <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
         <sys_class_name>sp_instance_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-05-31 06:10:29</sys_created_on>
-        <sys_id>cc8cfdd34f921300e7f701bda310c706</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Provide Feedback</sys_name>
+        <sys_created_on>2018-06-15 06:42:29</sys_created_on>
+        <sys_id>cfa3df044fba1300e7f701bda310c70c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Platform DXC</sys_name>
         <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
-        <sys_update_name>sp_instance_link_cc8cfdd34f921300e7f701bda310c706</sys_update_name>
+        <sys_update_name>sp_instance_link_cfa3df044fba1300e7f701bda310c70c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-15 06:07:10</sys_updated_on>
-        <title>Provide Feedback</title>
+        <sys_updated_on>2018-06-15 06:42:29</sys_updated_on>
+        <title>Platform DXC</title>
         <type>url</type>
-        <url>https://github.dxc.com/AET/Photon/issues</url>
+        <url>https://github.dxc.com/pages/Platform-DXC/docs/</url>
         <widget_parameters><![CDATA[{
 	"link_template": {
 		"value": "Top Icon",
@@ -41,5 +43,5 @@
 	}
 }]]></widget_parameters>
     </sp_instance_link>
-    <sys_translated_text action="delete_multiple" query="documentkey=cc8cfdd34f921300e7f701bda310c706"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=cfa3df044fba1300e7f701bda310c70c"/>
 </record_update>
