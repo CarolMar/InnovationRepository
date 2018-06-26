@@ -4,7 +4,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>choicecolumn1</element>
-            <list_id display_value="x_203882_innovate_table1" element="NULL" name="x_203882_innovate_table1" parent="NULL" relationship="NULL" sys_domain="global" view="f6232273b8130300651775b34d8f5187">8576deb54f421300e7f701bda310c72a</list_id>
+            <list_id display_value="x_203882_innovate_table1" element="NULL" name="x_203882_innovate_table1" parent="NULL" relationship="NULL" sys_domain="global" view="dbac3053042113006517fb8f19614783">8576deb54f421300e7f701bda310c72a</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -41,7 +41,7 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2018-05-14 05:57:17</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">f6232273b8130300651775b34d8f5187</view>
+            <view display_value="Reference List" name="sys_ref_list">dbac3053042113006517fb8f19614783</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>
