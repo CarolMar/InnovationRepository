@@ -6,6 +6,12 @@
         <color>default</color>
         <css>.iconlink{&#13;
   background-color:#3a3f51;&#13;
+}&#13;
+.text-default{&#13;
+  color:#ffffff;&#13;
+}&#13;
+h2{&#13;
+  color:#ffffff;&#13;
 }</css>
         <glyph>cogs</glyph>
         <id/>
@@ -25,14 +31,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-05-10 07:01:14</sys_created_on>
         <sys_id>36bef5604f821300e7f701bda310c734</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Platform DXC</sys_name>
-        <sys_package display_value="Innovate" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
+        <sys_package display_value="Photon" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Innovate">7ed042a14f301300e7f701bda310c75a</sys_scope>
+        <sys_scope display_value="Photon">7ed042a14f301300e7f701bda310c75a</sys_scope>
         <sys_update_name>sp_instance_link_36bef5604f821300e7f701bda310c734</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-10 12:42:56</sys_updated_on>
+        <sys_updated_on>2018-06-19 03:43:55</sys_updated_on>
         <title>Platform DXC</title>
         <type>url</type>
         <url>https://github.dxc.com/pages/Platform-DXC/docs/</url>
