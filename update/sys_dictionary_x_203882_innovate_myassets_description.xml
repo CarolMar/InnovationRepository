@@ -54,7 +54,11 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-05-14 03:41:08</sys_created_on>
+<<<<<<< HEAD
         <sys_id>ba459367db32130094ed7b1ebf9619dc</sys_id>
+=======
+        <sys_id>2d4423274fba1300e7f701bda310c7aa</sys_id>
+>>>>>>> a055c4710c110a37dfe3119f071302cee1a640cb
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Description</sys_name>
         <sys_package display_value="Photon" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
@@ -62,7 +66,11 @@
         <sys_scope display_value="Photon">7ed042a14f301300e7f701bda310c75a</sys_scope>
         <sys_update_name>sys_dictionary_x_203882_innovate_myassets_description</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
+<<<<<<< HEAD
         <sys_updated_on>2018-06-26 03:48:20</sys_updated_on>
+=======
+        <sys_updated_on>2018-06-26 04:53:47</sys_updated_on>
+>>>>>>> a055c4710c110a37dfe3119f071302cee1a640cb
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

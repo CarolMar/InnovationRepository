@@ -64,7 +64,11 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2018-03-14 06:05:41</sys_created_on>
+<<<<<<< HEAD
             <sys_id>2255d767db32130094ed7b1ebf96198a</sys_id>
+=======
+            <sys_id>e55467274fba1300e7f701bda310c751</sys_id>
+>>>>>>> a055c4710c110a37dfe3119f071302cee1a640cb
             <sys_mod_count>0</sys_mod_count>
             <sys_name>u_choice_1</sys_name>
             <sys_package display_value="Photon" source="x_203882_innovate">7ed042a14f301300e7f701bda310c75a</sys_package>
