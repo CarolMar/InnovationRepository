@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <record_update node_type="sys_portal_page" unload_date="2018-06-26 04:28:50">
 =======
 <record_update node_type="sys_portal_page" unload_date="2018-06-26 01:20:31">
 >>>>>>> 64343bc579bc6827ecd25fc137def105c3304315
+=======
+<record_update node_type="sys_portal_page" unload_date="2018-06-26 06:29:50">
+>>>>>>> 21976ca5c5302a379e0ebd597efe440f83a6c98a
     <sys_portal_page action="INSERT_OR_UPDATE">
         <layout display_value="layout_ Admin Home (Enterprise Edition)">7a26b3b5d7121100b9a5c7400e610372</layout>
         <order/>
